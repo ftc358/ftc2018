@@ -58,7 +58,6 @@ public class BasicOpMode_Linear extends LinearOpMode {
     private ElapsedTime runtime = new ElapsedTime();
     private DcMotor leftDrive = null;
     private DcMotor rightDrive = null;
-    //Kevin's Comment
 
     @Override
     public void runOpMode() {
