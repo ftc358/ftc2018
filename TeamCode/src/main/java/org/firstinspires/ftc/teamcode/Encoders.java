@@ -41,6 +41,7 @@ public class Encoders extends LinearOpMode
         // set left motor to run for 5000 encoder counts.
 
         leftMotor.setTargetPosition(-5000);
+        rightMotor.setTargetPosition(-5000);
 
         // set both motors to 25% power. Movement will start.
 
