@@ -17,14 +17,21 @@ import static java.lang.Math.sqrt;
 
 public class Model_DriveTrain extends LinearOpMode{
 
-    DcMotor leftMotor;
-    DcMotor rightMotor;
+    DcMotor lM;
+    DcMotor rM;
 
     @Override
     public void runOpMode() throws InterruptedException
     {
-    leftMotor = hardwareMap.dcMotor.get("leftMotor");
-    rightMotor = hardwareMap.dcMotor.get("rightMotor");
+    lM = hardwareMap.dcMotor.get("leftMotor");
+    rM = hardwareMap.dcMotor.get("rightMotor");
 
+    lM.setDirection(DcMotor.Direction.REVERSE);
+    rM.setDirection(DcMotor.Direction.REVERSE);
+
+    }
+    waitForStart();
+
+        while(opModeIsActive()) {
     }
 }
